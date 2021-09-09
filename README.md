@@ -129,5 +129,23 @@ El sistema representa un control de entrada de un local en el que se permiten un
                 if(sensor_1==0)
                     estado=espera;
 
+                if(sensor_2!=0)
+                {
+                    estado=egreso;
+                    config.cantp--;
+                }
+
+                if(config.cantp<config.maxp)
+                {
+                    estado=ingreso;
+                    config.cantp++;
+                }
+
+
+                break;
+        }
+    }
+    return 0;
+}
 
 
