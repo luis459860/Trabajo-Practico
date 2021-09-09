@@ -146,6 +146,7 @@ El sistema representa un control de entrada de un local en el que se permiten un
         }
     }
     return 0;
-}
+    }
+
 
 
