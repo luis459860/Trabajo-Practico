@@ -31,7 +31,8 @@
 	#include <stdlib.h>
 	#include "def.h"
 	#include "mystr.h"
-
+	
+	//config inicial
 	personas_t inicio(void)
 	{
     FILE *pf;
@@ -63,10 +64,12 @@
 
     return bf;
 	}
-
+	
+	//ESPERA
 	estados_t f_espera(char *cant,char *m)
 	{
-    estados_t est;
+    
+	estados_t est;
 
     do
     {
@@ -100,6 +103,8 @@
 
     return est;
 	}
+	
+	//INGRESO
 	estados_t f_ingreso(char *cant,char *m)
 	{
     estados_t est;
@@ -122,6 +127,8 @@
     return est;
 
 	}
+
+	//EGRESO
 	estados_t f_egreso(char *cant,char *m)
 	{
     estados_t est;
@@ -146,6 +153,8 @@
 
     return est;
 	}
+	
+	//CIERRE
 	estados_t f_cierre(char *x,char *y)
 	{
     estados_t est;
@@ -177,9 +186,9 @@
         est=ingreso;
     }
     return est;
-}
+	}
 
-#endif
+	#endif
 ### def.h
 
     typedef enum{
