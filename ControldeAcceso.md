@@ -235,5 +235,5 @@ Esta librería contiene una función para poder obtener los parámetros de confi
 
     cantidad inicial de personas: 0
 
-	maximo de personas: 100
+	maximo de personas: 100 //por ejemplo
 
